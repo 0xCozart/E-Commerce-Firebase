@@ -1,14 +1,15 @@
+import {
+  CustomGitHUb,
+  CustomLinkedIn,
+  CustomTwitter,
+  FooterContainer,
+  FooterSecret,
+  IconAnchor,
+  IconContainer
+} from './footer.styles.jsx';
+
 import React from 'react';
 import { connect } from 'react-redux';
-import {
-  FooterContainer,
-  IconContainer,
-  IconAnchor,
-  CustomTwitter,
-  CustomLinkedIn,
-  CustomGitHUb,
-  FooterSecret
-} from './footer.styles.jsx';
 
 export const Footer = () => {
   return (
@@ -16,29 +17,29 @@ export const Footer = () => {
       <FooterSecret>Contact me</FooterSecret>
       <IconContainer>
         <IconAnchor
-          href={'https://github.com/AlanVegaDecentralize'}
+          href={'https://github.com/0xCozart'}
           target={'_blank'}
           referrerPolicy="noreferrer noopener"
           title={'Connect to my code!'}
         >
           <CustomGitHUb size={'3em'} />
         </IconAnchor>
-        <IconAnchor
+        {/* <IconAnchor
           href={'https://www.linkedin.com/in/alan-vega/'}
           target={'_blank'}
           referrerPolicy="noreferrer noopener"
           title={'Connect to my professional profile!'}
         >
           <CustomLinkedIn size={'3em'} />
-        </IconAnchor>
-        <IconAnchor
-          href={'https://twitter.com/BankzAkuma'}
+        </IconAnchor> */}
+        {/* <IconAnchor
+          href={'https://twitter.com/Bank'}
           target={'_blank'}
           referrerPolicy="noreferrer noopener"
           title={'Connect to my less professional profile! :D'}
-        >
-          <CustomTwitter size={'3em'} />
-        </IconAnchor>
+        > */}
+        {/* <CustomTwitter size={'3em'} />
+        </IconAnchor> */}
       </IconContainer>
     </FooterContainer>
   );

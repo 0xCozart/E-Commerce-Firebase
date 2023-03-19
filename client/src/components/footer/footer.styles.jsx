@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai';
+
+import { AiFillTwitterSquare } from 'react-icons/ai';
 import { FaGithubSquare } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const footerStyles = css`
   background-color: #3b414f;
@@ -50,9 +51,6 @@ export const FooterSecret = styled.div`
   font-size: 2.5em;
 `;
 
-export const CustomLinkedIn = styled(AiFillLinkedin)`
-  ${styledIcon}
-`;
 export const CustomTwitter = styled(AiFillTwitterSquare)`
   ${styledIcon}
 `;
